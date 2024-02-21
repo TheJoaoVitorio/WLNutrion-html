@@ -3,3 +3,15 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --shadow-header:#DEDEDE;
+    --cor-black:#000000;
+    --cor-laranja:#EE7828;
+    --cor-branca:#FFFFFF;
+    --cor-cinza:#545454;
+    --cor-cinza-light:#9F9F9F; /* Usado nos formularios , icons da navbar*/
+    --cor-cinza2:#838383; /*usado no butão de voltar*/
+    --cor-verde:#30BE57;
+    --cor-verde-escura:#20903F;
+}
