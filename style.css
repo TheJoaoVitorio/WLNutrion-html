@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins";
+    
 }
 
 :root{
@@ -15,3 +18,49 @@
     --cor-verde:#30BE57;
     --cor-verde-escura:#20903F;
 }
+
+/* CLASSES GERAIS */
+.flex{
+    display: flex;
+}
+.btn-redondo{
+    width: 70px;
+    height: 30px;
+
+    border: none;
+    border-radius: 14px;
+    background-color: #EE7828;
+    cursor: pointer;
+    color: var(--cor-branca);
+    font-weight: 500;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.582);
+}
+
+/*  */
+
+
+/* HEADER */
+
+nav{
+    width: 100%;
+    height: 16vh;
+    padding: 0px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width:60px;
+    
+}
+.nav-items{
+    gap:20px;
+}
+.nav-items ul{
+    list-style: none;
+}
+.nav-items li a{
+    color: var(--cor-black);
+}
+/* FIM HEADER */
