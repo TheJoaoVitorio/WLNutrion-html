@@ -64,7 +64,6 @@ nav{
 }
 .logo img{
     width:60px;
-    
 }
 .nav-items{
     align-items: center;
@@ -81,9 +80,9 @@ nav{
 
 /* SECTION INFO */
 .container-info{
-    /* border:2px solid red; */
+    /*border:2px solid red; */
     width: 100%;
-    height:50vh;
+    /*height:50vh;*/
     margin:40px 0px;
 
     display:flex;
@@ -135,7 +134,7 @@ nav{
     font-weight: 500;
 }
 .recursos-item-content .recursos-item-p p{
-    
+    flex-wrap:wrap;
     font-size:14px;
 }
 /* FIM SECTION RECURSOS */
@@ -144,7 +143,7 @@ nav{
 /* FOOTER PAGINA INICIAL */
 footer{
     width: 100%;
-    height:14vh;
+    height:15vh;
 
     background-color: var(--cor-laranja);
     align-items: center;
@@ -160,3 +159,49 @@ footer{
     font-weight: 400;
 }
 /* FIM FOOTER PAGINA INICIAL */
+
+
+/* RESPONSIVIDADE */
+@media (max-width:840px){
+    .section-info-image img{
+        max-width: 200px;
+    }
+
+
+    .recursos-content{
+        padding:30px;
+    }
+    .recursos-item{
+        /*border:2px solid red;*/
+        width: 350px;
+        padding:20px;
+    }
+}
+@media (max-width:761px){
+    .recursos-content{
+        justify-content: center;
+    }
+    .recursos-item{
+        gap:10px;
+    }
+
+}
+@media (max-width:605px){
+    .container-info .section-info{
+        flex-direction: column-reverse;
+        /*justify-content: center;*/
+        align-items: center;
+    }
+    .container-info{
+        justify-content: center;
+    }
+    .section-info{
+        /*border:2px solid blue;*/
+        width:280px;
+        padding:10px;
+    }
+    .section-info-text-title h1{
+        font-size:16px;
+    }
+}
+/**/
