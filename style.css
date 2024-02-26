@@ -23,8 +23,8 @@
     display: flex;
 }
 .btn-redondo{
-    width: 70px;
-    height: 30px;
+    /* width: 70px;
+    height: 30px; */
 
     border: none;
     border-radius: 14px;
@@ -42,14 +42,12 @@ nav{
     width: 100%;
     height: 16vh;
     box-shadow: 0px 1px rgb(223, 223, 223);
-    /* padding: 0px 50px; */
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .container-navbar{
-    /*border: 2px solid red;*/
     position: relative;
 }
 .navbar-content{
@@ -59,8 +57,6 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    position: absolute;
 }
 .logo img{
     width:60px;
@@ -75,26 +71,26 @@ nav{
 .nav-items li a{
     color: var(--cor-black);
 }
+.btn-login{
+    width: 70px;
+    height: 30px;
+}
 /* FIM HEADER */
 
 
 /* SECTION INFO */
 .container-info{
-    /*border:2px solid red; */
     width: 100%;
-    /*height:50vh;*/
     margin:40px 0px;
 
     display:flex;
     justify-content: space-between;
 }
 .section-info{
-    /* border:2px solid yellow; */
     width:100%;
     justify-content: space-evenly;
 }
 .section-info-text{
-    /* border:2px solid blue; */
     display:flex;
     flex-direction: column;
     gap: 12px;
@@ -167,12 +163,10 @@ footer{
         max-width: 200px;
     }
 
-
     .recursos-content{
         padding:30px;
     }
     .recursos-item{
-        /*border:2px solid red;*/
         width: 350px;
         padding:20px;
     }
@@ -180,6 +174,7 @@ footer{
 @media (max-width:761px){
     .recursos-content{
         justify-content: center;
+        padding: 20px;
     }
     .recursos-item{
         gap:10px;
@@ -187,21 +182,32 @@ footer{
 
 }
 @media (max-width:605px){
+    .section-info-text-title h1{
+        font-size: 16px;
+    }
+    .section-info-text-p p{
+        font-size: 12px;
+    }
+
     .container-info .section-info{
         flex-direction: column-reverse;
-        /*justify-content: center;*/
         align-items: center;
     }
     .container-info{
         justify-content: center;
     }
     .section-info{
-        /*border:2px solid blue;*/
         width:280px;
         padding:10px;
     }
     .section-info-text-title h1{
         font-size:16px;
+    }
+    .recursos-item-title h1{
+        font-size: 26px;
+    }
+    .footer-text h1{
+        font-size: 18px;
     }
 }
 /**/
