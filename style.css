@@ -200,10 +200,7 @@ footer{
     z-index: -1;
 }
 .active{
-    width:30px;
-    border:2px solid red;
-    background-color: #30BE57;
-    /* background-color: #efefefc3; */
+    background-color: #efefefc3;
     border-radius: 12px;
 }
 #image-sidebar{
@@ -222,11 +219,6 @@ footer{
 .container-pai-de-todos{
     width: 100%;
     overflow: hidden;
-}
-
-.container-content{
-    /* border:2px solid red; */
-    /* height: max-content; */
 }
 .content-title{
     width: 100%;
@@ -367,8 +359,6 @@ footer{
 /*  */
 
 
-
-
 /* CONTATE-NOS */
 .title-contate-nos h1{
     font-weight: 500;
@@ -437,7 +427,7 @@ textarea:focus{
     height: 30px;
     
 }
-/*  */
+/* Fim Contate nos*/
 
 /* Conta*/
 .container-telaUser{
@@ -489,7 +479,7 @@ textarea:focus{
     font-size: 20px;
     color: #474747;
 }
-/* Fim Conta*/
+/* Fim Conta */
 
 
 @media (max-width:867px){
@@ -536,7 +526,7 @@ textarea:focus{
         /* top: 0; */
         background-color: #FFFFFF;
     }
-    /* */
+    /**/
 
     /* Principal*/
     .container-principal{
@@ -630,7 +620,7 @@ textarea:focus{
         width: 260px;
         height: 100px;
     }
-    /*  */
+    /**/
 
     /* Conta */
     .container-telaUser{
@@ -639,5 +629,5 @@ textarea:focus{
     .caixa2 > div{
         font-size: 18px;
     }
-    /* */
+    /**/
 }
