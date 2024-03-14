@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/short-icon.png">
-    <title>WLNutrion - Home</title>
+    <title>WLNutrion - Minhas Receitas</title>
 </head>
 <body>
     <nav class="container-navbar">
@@ -29,7 +31,7 @@
             <div class="nav-left">
                 <div class="nav-items-lateral">
                     <div class="item-lateral ">
-                        <a class="active" href="principal.html">
+                        <a href="principal.html">
                             <img id="image-sidebar" src="img/home.png">
                         </a>
                     </div>
@@ -63,7 +65,43 @@
             <div class="content">
                 <div class="container-content">
                     <div class="content-title">
-                        <h1>Minhas Receitas</h1>
+                        <h1 id="minhas-receitas">Minhas Receitas</h1>
+                    </div>
+
+                    <div class="content-minhas-receitas">
+                        <div class="pesquisar-receitas">
+                            <input type="text" placeholder="Buscar">
+                            <img id="search-icon" src="img/pesquisar.png">
+                        </div>
+
+                        <div class="receitas">
+                            <table class="tabela-receitas">
+                                <thead>
+                                    <tr>
+                                        <th>Receitas</th>
+                                        <th>Data de criação</th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>itemReceita</td>
+                                        <td>00/00/0000</td>
+                                        <td><a href=""><img class="icons-table" src="img/olhar-receita.png"></a></td>
+                                        <td><a href=""><img class="icons-table" src="img/apagar-receita.png"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>itemReceita</td>
+                                        <td>00/00/0000</td>
+                                        <td><a href=""><img class="icons-table" src="img/olhar-receita.png"></a></td>
+                                        <td><a href=""><img class="icons-table" src="img/apagar-receita.png"></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
                     </div>
                    
                 </div>
@@ -73,6 +111,7 @@
 
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/5.5.1/jquery.min.js"></script>
     <script src="activePage.js"></script>
 </body>
 </html>
