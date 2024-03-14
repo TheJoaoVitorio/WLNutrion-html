@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/short-icon.png">
-    <title>WLNutrion - Home</title>
+    <title>WLNutrion - Meus ingredientes</title>
 </head>
 <body>
     <nav class="container-navbar">
@@ -29,9 +29,9 @@
         <div class="container-principal flex">
             <div class="nav-left">
                 <div class="nav-items-lateral">
-                    <div class="item-lateral active">
+                    <div class="item-lateral">
                         <a href="principal.html">
-                            <img id="image-sidebar" src="img/home-active.png">
+                            <img id="image-sidebar" src="img/home.png">
                         </a>
                     </div>
     
@@ -41,9 +41,9 @@
                         </a>
                     </div>
     
-                    <div class="item-lateral">
+                    <div class="item-lateral active">
                         <a href="ingredientes.html">
-                            <img id="image-sidebar" src="img/ingredientes.png">
+                            <img id="image-sidebar" src="img/ingredientes-active.png">
                         </a>
                     </div>
     
@@ -64,50 +64,15 @@
             <div class="content">
                 <div class="container-content">
                     <div class="content-title">
-                        <h1>Seja bem vindo,nome do usuario</h1>
+                        <h1>Meus ingredientes</h1>
                     </div>
-                    <div class="dashboard flex">        
-                        <div class="dashboard-menu">
-                            <div class="dashboard-item flex">
-                                <div class="dashboard-text">
-                                    <h1 id="qtdMinhasReceitas">0</h1>
-                                    <p>Minhas receitas</p>
-                                </div>
-                                <div class="dashboard-img">
-                                    <img src="img/icon _book 1_.svg" alt="">
-                                </div>
-                            </div>
-    
-                            <div class="dashboard-item flex">
-                                <div class="dashboard-text">
-                                    <h1 id="qtdMeusIngredientes">0</h1>
-                                    <p>Meus ingredientes</p>
-                                </div>
-                                <div class="dashboard-img">
-                                    <img src="img/fi-rr-salad.svg" alt="">
-                                </div>
-                            </div>
-    
-                            <div class="dashboard-item flex">
-                                <div class="dashboard-text">
-                                    <h1 id="baseIngredientes">0</h1>
-                                    <p>Base de ingredientes</p>
-                                </div>
-                                <div class="dashboard-img">
-                                    <img src="img/database.svg" alt="">
-                                </div>
-                            </div>
+                   
+                    <div class="content-ingredientes">
+                        <div class="pesquisar-receitas">
+                            <input type="text" placeholder="Buscar">
+                            <img id="search-icon" src="img/pesquisar.png">
                         </div>
-                        <div class="dashboard-menu-table">
-                            <div class="title-table">Ultimas Receitas</div>
-                                <table>
-                                    <thead>
-                                        <tr>Receita</tr>
-                                        <tr>Data de criação</tr>
-                                    </thead>
-                                </table>
-    
-                        </div>
+                        
                     </div>
                 </div>
             </div>
