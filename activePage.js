@@ -1,26 +1,10 @@
-//const navLinks = document.querySelectorAll('.item-lateral a');
-//navLinks.forEach(navLinks => {
-//     navLinks.addEventListener('click', () => {
-//         document.querySelector('.active').classList.remove('active');
-//         navLinks.classList.add('active');
-//    
-//     });
-//})
-
-//const currentLocation = location.href;
-//const navItem = document.querySelectorAll("div .item-lateral");
-//const menuLength = navItem.length;
-
-//for (var i=0 ; i < menuLength; i++){
-//    if (navItem [i].href === currentLocation){
-//        navItem[i].className = "active";
-//    }
-//}
-
-//const navItem = document.getElementsByClassName('.item-lateral')
-// $(document).ready(function(){
-//     $('.item-lateral').click(function(){
-//         $('.item-lateral').removeClass('active');
-//         $(this).addClass('.active');
-//     })
-// })
+$('#valEnergetico').mask("#.##0,00", {reverse: true});
+$('#carboidratos').mask("#.##0,00", {reverse: true});
+$('#acucarTotal').mask("#.##0,00", {reverse: true});
+$('#acucarAdicionado').mask("#.##0,00", {reverse: true});
+$('#proteinas').mask("#.##0,00", {reverse: true});
+$('#gordTotais').mask("#.##0,00", {reverse: true});
+$('#gordSaturadas').mask("#.##0,00", {reverse: true});
+$('#gordTrans').mask("#.##0,00", {reverse: true});
+$('#fibraAlimentar').mask("#.##0,00", {reverse: true});
+$('#sodio').mask("#.##0,00", {reverse: true});

@@ -43,6 +43,17 @@
     border-radius: 6px;
     cursor: pointer;
 }
+.btn-verde{
+    color: #FFFFFF;
+    background-color: #30BE57;
+    width: 100px;
+    border: none;
+    padding: 3px;
+    border-radius: 6px;
+}
+.btn-verde:hover{
+    background-color: #20903F;
+}
 /*  */
 
 
@@ -341,7 +352,7 @@ footer{
 .icons-table{
     width: 32px;
 }
-/*  */
+/* FIM MINHAS RECEITAS */
 
 
 /* MEUS INGREDIENTES */
@@ -356,7 +367,29 @@ footer{
     align-items: center;
     margin-top: 10px;
 }
-/*  */
+
+    /* CRIAR INGREDIENTES */
+    #titulo-insira-valores{
+        font-weight: 300;
+    }
+    .inputs-ingredientes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .input-ingrediente {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }   
+    .input-button{
+        margin-top: 10px;
+    }
+    /* FIM CRIAR INGREDIENTES */
+
+    
+/* FIM MEUS INGREDIENTES */
 
 
 /* CONTATE-NOS */
@@ -429,6 +462,7 @@ textarea:focus{
 }
 /* Fim Contate nos*/
 
+
 /* Conta*/
 .container-telaUser{
     width: 100%;
@@ -480,6 +514,7 @@ textarea:focus{
     color: #474747;
 }
 /* Fim Conta */
+
 
 
 @media (max-width:867px){
