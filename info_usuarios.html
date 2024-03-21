@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/short-icon.png">
+    <title>WLNutrion - Home</title>
+</head>
+<body>
+    <nav class="container-navbar">
+        <div class="navbar-content">
+            <div class="logo">
+                <a href="principal.html">
+                    <img src="img/logo.png">
+                </a>
+            </div>
+            <div class="logo user-navbar">
+                <a href="user.html">
+                    <img src="img/user.png">
+                </a>
+            </div>
+    </nav>  
+
+    <div class="container-pai-de-todos">
+        <div class="container-principal flex">
+            <div class="nav-left">
+                <div class="nav-items-lateral">
+                    <div class="item-lateral">
+                        <a href="principal.html">
+                            <img id="image-sidebar" src="img/home.png">
+                        </a>
+                    </div>
+    
+                    <div class="item-lateral">
+                        <a href="receitas.html">
+                            <img id="image-sidebar" src="img/receita.png">
+                        </a>
+                    </div>
+    
+                    <div class="item-lateral">
+                        <a href="ingredientes.html">
+                            <img id="image-sidebar" src="img/ingredientes.png">
+                        </a>
+                    </div>
+    
+                    <div class="item-lateral">
+                        <a href="contate-nos.html">
+                            <img id="image-sidebar" src="img/fi-rr-headset.png">
+                        </a>
+                    </div>
+    
+                    <div class="item-lateral">
+                        <a href="user.html">
+                            <img id="image-sidebar" src="img/fi-rr-user.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="content">
+                <div class="container-content">
+                    <div class="content-title">
+                        <h1>Informações de usuário</h1>
+                    </div>
+
+
+                    <form id="form-info-user" action="">
+                        <div>
+                            <label for="input-info-nome">Nome</label>
+                            <input class="inputForm" id="input-info-nome" type="text" placeholder="Nome do Usuário" readonly>
+                        </div>
+                        <div>
+                            <label for="input-info-emailEmail">Email</label>
+                            <input class="inputForm" id="input-info-email" type="email" placeholder="EmaildoUsuário@gmail.com" readonly >
+                        </div>
+                        <div>
+                            <label for="">Senha Atual</label>
+                            <input class="inputForm" type="password" required>
+                        </div>
+                        <div>
+                            <label for="">Nova Senha</label>
+                            <input class="inputForm" type="password" required>
+                        </div>
+
+                        <button class="btn-verde" type="submit">Salvar</button>
+                    </form>
+                </div>
+            </div>  
+            
+
+    <script src="activePage.js"></script>
+</body>
+</html>
