@@ -515,14 +515,14 @@ textarea:focus{
 }
 
 
-    /* Info User - CONTA*/
+    /* Info User - CONTA */
     #form-info-user > div{
         display: flex;
         flex-direction: column;
         padding:8px;
     }
     
-    /* Fim Info User - CONTA*/
+    /* Fim Info User - CONTA */
 
 
 /* Fim Conta */
