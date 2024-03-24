@@ -305,7 +305,8 @@ footer{
     align-items: center;
 }
 .pesquisar-receitas input{
-    min-width: 300px;
+    max-width: 95%;
+    /*min-width: 300px;*/
     width: 300px;
     height: 40px;
     border: none;
@@ -323,39 +324,78 @@ footer{
 }
 
 .receitas{
-    /* border: 1px solid black; */
-
-    min-width: 300px;
-    width: 320px;
+    padding:10px;
     margin-top: 10px;
-}
-
-.tabela-receitas{
-    border-collapse: collapse;
-    text-align: center;
-    border-radius: 10px;
-}
-.tabela-receitas thead{
-    border-radius: 10px;
-}
-.tabela-receitas thead th {
-    width: 320px;
     background: #F0F0F0;
-    /* padding: 10px; */
+    border-radius: 6px;
+
+    max-width: 95%;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.receitas table th{
     font-weight: 400;
+}
+.receitas tbody th{
+    font-size: 14px;
+}
+.receitas tr{
+    border-bottom: 2px dashed red;
+}
 
+#verReceita , #excluirReceita{
+    border:none;
+    background: none;
+    cursor: pointer;
 }
-.tabela-receitas tbody{
+
+.menu-paginacao{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    gap: 12px;
+}
+
+.menu-paginacao button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#InputPaginacaoReceita{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
     background: #F0F0F0;
-    
+    text-align: center;
+    outline: none;
 }
-.icons-table{
-    width: 32px;
+#divBtnReceita{
+    margin-top: 16px;
 }
-/* FIM MINHAS RECEITAS */
+.btnCriarReceita{
+    width: 250px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: 600;
+}
+/* FIM RECEITAS */
 
 
 /* MEUS INGREDIENTES */
+.titleMeusIngredientes h1{
+    font-weight: 500;
+}
+.container-ingredientes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
 .content-ingredientes{
     width: 100%;
     height: auto;
@@ -367,8 +407,128 @@ footer{
     align-items: center;
     margin-top: 10px;
 }
+/* BOTÃO PESQUISAR*/
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 65%;
+    height: 45px;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(223, 223, 223);
+}
+
+.search-box img {
+    width: 25px;
+    margin-left: 10px;
+}
+
+.search-box input {
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    background-color: #F0F0F0;
+    font-size: 14px;
+}
+/* FIM BOTÃO PESQUISAR*/
+
+
+/* TABELA INGREDIENTES*/
+.box-2 {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 10px;
+    
+    border-radius: 10px;
+    width: 90%;
+    
+    background-color: #F0F0F0;
+    font-size: 15px;
+    padding: 12px;
+    
+    overflow-x: auto;
+}
+
+.box-2 table {
+    width: 100%;
+}
+.box-2 thead{
+    gap: 50px;
+}
+.box-2 table tr{
+    padding: 40px;
+}
+.box-2 th {
+    padding-left: 5px;
+    font-weight: 500;
+    font-size: 12px;
+}
+.box-2 th, .box-2 td {
+    margin-left: 50px;
+}
+.box-2 tbody th{
+    font-weight: 400;
+}
+
+/* FIM TABELA INGREDIENTES*/
+
+
+/* BOX*/
+.box-3 {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    /* width: 20%; */
+    margin: 50px auto; 
+    align-items: center;
+}
+
+.box-3 input {
+    /* margin-left: 15px; */
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    font-size: 20px;
+    border: none;
+    background-color: #F0F0F0;
+    border-radius: 10px;
+}
+.box-3 button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* FIM BOX*/
+
+/* BOTÃO CRIAR INGREDIENTES*/
+.btnCriarIngrediente{
+    width: 300px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+/* FIM BOTÃO CRIAR INGREDIENTES*/
+
+
 
     /* CRIAR INGREDIENTES */
+    .containerForm{
+        justify-content: center;
+    }
+    #formularioCriarIngrediente{
+        width: 65%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 70px;
+    }
     #titulo-insira-valores{
         font-weight: 300;
     }
@@ -376,20 +536,32 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .inputs-ingredientes input{
+        width: 200px;
     }
     .input-ingrediente {
-        width: 300px;
+        /*width: 300px;*/
         display: flex;
         flex-direction: column;
     }   
     .input-button{
+        flex-direction: column;
         margin-top: 10px;
+    }
+    .btnCriandoIngrediente{
+        width: 200px;
+        height: 30px;
+        font-weight: 600;
+        cursor: pointer;
     }
     /* FIM CRIAR INGREDIENTES */
 
-    
 /* FIM MEUS INGREDIENTES */
+
 
 
 /* CONTATE-NOS */
@@ -401,6 +573,10 @@ footer{
     justify-content: center;
     align-items: center;
 }
+.inputs-contate-nos input{
+    max-width: 100%;
+    width: 360px;
+}
 .formContateNos{
     /* min-width: 400px; */
     width: 80%;
@@ -411,7 +587,7 @@ footer{
     /* justify-content: center; */
     /* align-items: center; */
 }
-form{
+#formularioContateNos{
     min-width: 375px;
     display: flex;
     flex-direction: column;
@@ -513,6 +689,45 @@ textarea:focus{
     font-size: 20px;
     color: #474747;
 }
+    /* Info User - CONTA */
+    .containerFormUser{
+        justify-content: center;
+        align-items: center;
+    }
+    #form-info-user > .divInputUser{
+        display: flex;
+        flex-direction: column;
+        padding:8px;
+        width: 300px;
+    }
+    .buttons-info-user{
+        width: 300px;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #btnVoltaInfoUser{
+        display: flex;
+        align-items: center;
+        border: none;
+        background: none;
+        font-size: 9px;
+        cursor: pointer;
+        color: #838383;
+    }
+    .btnAtualizar{
+        width: 100px;
+        height: 30px;
+        padding:3px;
+        color:white;
+        font-weight: 600;
+    }
+    .btnAtualizar:hover{
+        background: #dd6719;
+    }
+    
+    /* Fim Info User - CONTA */
+
 /* Fim Conta */
 
 
