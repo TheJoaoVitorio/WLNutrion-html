@@ -286,8 +286,8 @@ footer{
 
 
 /* MINHAS RECEITAS */
-#minhas-receitas{
-    font-weight: 400;
+#title-minhas-receitas{
+    font-weight: 500;
 }
 .content-minhas-receitas{
     width: 100%;
@@ -382,6 +382,52 @@ footer{
     cursor: pointer;
     font-weight: 600;
 }
+
+    /* Criando receita - PASSO 1 */
+    .progress-bar{
+        width: 280px;
+        /*border:2px solid red;*/
+        position: relative;
+        color: #EE7828;
+    }
+    .progress-bar ul{
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+    .progress-bar li{
+        background: white;
+        border-radius: 80%;
+        border: 3px solid #EE7828;
+        padding: 5px;
+        cursor: pointer;
+    }
+    .progress-bar i{
+        font-size: 26px;
+    }
+    .progress::after{
+        content: '';
+        width: 210px;
+        height: 3px;
+        background-color: #F0F0F0;
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        z-index: -1;
+    }
+    li .ativo{
+        background-color: #EE7828;
+        display: grid;
+        place-items:center;
+    }
+    .ativo li{
+        background-color: #EE7828;
+        color:white;
+    }
+    ul li .ativo::after{
+        background-color: #EE7828;
+    }
+    /* */
 /* FIM RECEITAS */
 
 
