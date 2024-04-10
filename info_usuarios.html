@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/short-icon.png">
-    <title>WLNutrion - Minha Conta</title>
+    <title>WLNutrion - Informações de Usuário</title>
 </head>
 <body>
     <nav class="container-navbar">
@@ -62,46 +62,41 @@
     
             <div class="content">
                 <div class="container-content">
-                    <div class="container-telaUser">
-                        <div class="caixa1">
-                            <div class="caixa-info">
-                                <div class="logoUser">
-                                    <img width="80px" src="img/user.png">
-                                </div>
-                                <div class="nameUser">
-                                    <h1>Username</h1>
-                                </div>
-                                <div class="emailUser">
-                                    <p>emailUser@gmail.com</p>
-                                </div>
+                    <div class="content-title">
+                        <h1>Informações de usuário</h1>
+                    </div>
+
+                    <div class="containerFormUser flex">
+                        <form id="form-info-user" action="">
+                            <div class="divInputUser">
+                                <label for="input-info-nome">Nome</label>
+                                <input class="inputForm" id="input-info-nome" type="text" placeholder="Nome do Usuário" readonly>
                             </div>
-                        </div>
-                        <a class="caixa2" href="info_usuarios.html">
-                            <div>
-                                <img width="25px" src="img/icon-configuration.png">
+                            <div class="divInputUser" >
+                                <label for="input-info-email">Email</label>
+                                <input class="inputForm" id="input-info-email" type="email" placeholder="EmaildoUsuário@gmail.com" readonly >
                             </div>
-                            <div>
-                                Gerenciar Conta
+                            <div class="divInputUser" >
+                                <label for="">Senha Atual</label>
+                                <input class="inputForm" type="password" required>
                             </div>
-                        </a>
-                        
-                        <a class="caixa2" href="">
-                            <div>
-                                <img width="25px" src="img/icon-exit.png">
+                            <div class="divInputUser" >
+                                <label for="">Nova Senha</label>
+                                <input class="inputForm" type="password" required>
                             </div>
-                            <div>
-                             Sair
+    
+                            <div class="buttons-info-user">
+                                <a class="" href="user.html">
+                                    <button id="btnVoltaInfoUser" type="reset" ><img src="img/fi-sr-arrow-small-right.png"> <h1>Voltar</h1> </button>
+                                </a>
+                                <button class="btn-quadrado btnAtualizar" type="submit">Atualizar</button>
                             </div>
-                        </a>
+                        </form>
 
                     </div>
-                
                 </div>
-            </div>
-    
-        </div>
-
-    </div>
+            </div>  
+            
 
     <script src="activePage.js"></script>
 </body>
