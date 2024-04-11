@@ -9,6 +9,9 @@ $('#gordTrans').mask("#.##0,00", {reverse: true});
 $('#fibraAlimentar').mask("#.##0,00", {reverse: true});
 $('#sodio').mask("#.##0,00", {reverse: true});
 
+$('#qtdIngredienteReceita').mask("#.##0,00", {reverse: true});
+console.log('ola mundo')
+
 
 let popup = document.getElementById("popup");
     function openPopup(){

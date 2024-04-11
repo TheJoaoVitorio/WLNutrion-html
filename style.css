@@ -967,7 +967,9 @@ img.email{
         padding: 10px;
     }
     .itemsReceita ul{
+        height: 220px;
         list-style: none;
+        overflow-y: auto;
     }
     .itemsReceita li{
         border:1px solid red;
