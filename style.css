@@ -445,7 +445,6 @@ img.email{
     --offset: 1;
     
     background-color: #EE7828;
-    
   }
   div.item:nth-of-type(2) {
     --offset: 2;
@@ -622,7 +621,6 @@ img.email{
     gap: 20px;
 }
 .dashboard-item{
-    
     width: 300px;
     height: 100px;
     border-radius:12px;
@@ -637,13 +635,10 @@ img.email{
     padding: 14px;
 
     background: var(--cor-cinza3);
-    border: 2px solid black;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
-    /* text-align: center; */
+    text-align: center
 }
 
 
@@ -836,7 +831,7 @@ img.email{
         justify-content: center;
         gap:10px;
         
-        /*display: none;*/
+        display: none;
     }
     .tituloReceita,.medidaReceita,.glutenReceita,
     .lactoseReceita,.tipoPorcaoReceita,.porcoesEmbaladasReceita,.pesoFinalReceita,.porcaoReceita,.medidaCaseiraReceita
@@ -882,7 +877,7 @@ img.email{
 
     /* Form Two */
     .form-two{
-        display: none;
+        /*display: none;*/
     }
     .wrapper{
         border: 2px solid red;
@@ -890,6 +885,12 @@ img.email{
 
         flex-direction: column;
         align-items: center;
+    }
+    .wrapper .active .select-btn i{
+        transform: rotate(-1000deg);
+    }
+    .wrapper .active .content-dropReceita{
+        /*display: block;*/
     }
     .select-btn{
         width: 320px;
@@ -904,7 +905,11 @@ img.email{
         margin-top: 10px;
         cursor: pointer;
     }
+    .select-btn i{
+        transition: transform 0.3s linear;
+    }
     .content-dropReceita{
+        display:none;
         background: #F0F0F0;
         margin-top: 10px;
     }
@@ -928,7 +933,6 @@ img.email{
         accent-color: var(--cor-laranja);
     }
 
-   
     #search-ingrediente-input input[type="checkbox"]:checked + label:before{
         background-color: #EE7828;
     }
@@ -941,11 +945,52 @@ img.email{
         list-style: none;
         display: flex;
         flex-direction: column;
-        gap: 2px
+        gap: 2px;
+        padding:5px;
+    }
+    .content-dropReceita .optionsIngredientes{
+        max-height:170px;
+        overflow-y: auto;
     }
     .optionsIngredientes li{
         padding: 5px;
-
+    }
+    .optionsIngredientes li:hover{
+        background:#DEDEDE;
+    }
+    .itemsReceita{
+        background: var(--cor-cinza3);
+        border-radius: 6px;
+        width: 320px;
+        height: 15em;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .itemsReceita ul{
+        list-style: none;
+    }
+    .itemsReceita li{
+        border:1px solid red;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .itemsReceita li input{
+        width: 80px;
+        border:none;
+        border-radius: 5px;
+        padding: 5px;
+        outline:none;
+    }
+    .itemsReceita div{
+        flex-direction: column;
+    }
+    .itemsReceita button{
+        display:flex;
+        align-items: center;
+        border:none;
+    }
+    .itemsReceita button img{
+        width:35px;
     }
     
     /* */
