@@ -640,6 +640,13 @@ img.email{
     flex-direction: column;
     text-align: center
 }
+.title-table{
+    font-weight: 600;
+}
+.linha-tbody th{
+    font-weight: 400;
+    font-size: 14px;
+}
 
 
 
@@ -965,6 +972,7 @@ img.email{
         height: 15em;
         margin-top: 10px;
         padding: 10px;
+        margin-bottom: 10px;
     }
     .itemsReceita ul{
         height: 220px;
@@ -993,6 +1001,10 @@ img.email{
     }
     .itemsReceita button img{
         width:35px;
+    }
+
+    #listaIngredientes{
+        display: none;
     }
     
     /* */
