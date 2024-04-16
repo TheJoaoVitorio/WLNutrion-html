@@ -884,7 +884,7 @@ img.email{
 
     /* Form Two */
     .form-two{
-        /*display: none;*/
+        display: none;
     }
     .wrapper{
         border: 2px solid red;
@@ -916,16 +916,16 @@ img.email{
         transition: transform 0.3s linear;
     }
     .content-dropReceita{
-        display:none;
+        display:block;
         background: #F0F0F0;
         margin-top: 10px;
     }
-    .search-ingrediente{
+    .search-ingrediente .search-alergenico{
         width: 320px;
         display: flex;
         flex-direction: column;
     }
-    #search-ingrediente-input{
+    #search-ingrediente-input #search-alergenico-input{
         width: 320px;
         height: 35px;
         /* border: none; */
@@ -955,14 +955,14 @@ img.email{
         gap: 2px;
         padding:5px;
     }
-    .content-dropReceita .optionsIngredientes{
+    .content-dropReceita .optionsIngredientes ,.optionsAlergenicos{
         max-height:170px;
         overflow-y: auto;
     }
-    .optionsIngredientes li{
+    .optionsIngredientes , .optionsAlergenicos li{
         padding: 5px;
     }
-    .optionsIngredientes li:hover{
+    .optionsIngredientes ,.optionsAlergenicos li:hover{
         background:#DEDEDE;
     }
     .itemsReceita{
@@ -1004,10 +1004,64 @@ img.email{
     }
 
     #listaIngredientes{
-        display: none;
+        display: block;
     }
     
     /* */
+
+    /* Table Ingredientes da Receita */
+    .table-ingredientes-da-receita{
+        width: 320px;
+        height: 16em;
+        background: #f0f0f0;
+        border-radius:5px;
+        margin-top:10px;
+        overflow-y: auto;
+    }
+    .table-ingredientes-da-receita table{
+        padding:12px;
+    }
+    .table-ingredientes-da-receita .qtdIngredienteInput{
+        flex-direction:column;
+    }
+    .table-ingredientes-da-receita tbody tr {
+        display: flex;
+        gap:50px;
+        align-items: center;
+        border-bottom: 2px solid #DEDEDE;
+        padding:4px;
+
+        font-size:14px;
+    }
+    .table-ingredientes-da-receita tbody label{
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .table-ingredientes-da-receita tbody input{
+        width: 70px;
+        border:none;
+        outline:none;
+        border-radius: 5px;
+        padding:2px;
+    }
+    .table-ingredientes-da-receita #btnApagarIng{
+        background: none;
+        cursor:pointer;
+        border:none;
+    }
+    /* */
+
+    /* FORM THREE */
+    #search-alergenico-input{
+        width: 320px;
+        height: 35px;
+        /* border: none; */
+        border-radius: 8px;
+        padding: 10px;
+        border: 0.5px solid #545454;
+        /* background: #F0F0F0; */
+        outline: none;
+    }
 /**/
 .container-btn-group{
     border:2px solid cyan;
