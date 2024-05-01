@@ -767,25 +767,43 @@ img.email{
         align-items: center;
         border-radius: 50%;
     }
-    .step1{
+    /*.step1{
         border-color: #EE7828;
         background: #EE7828;
-        color: white;
+        
         transition: all 0.04s ease;
-    }
-    
+    }*/
+
     .step i{
         font-size: 25px;
-        color:#EE7828;
+        color:#d4d4d4;
     }
+
+    .iconStepActive{
+        background-color: var(--cor-laranja);
+        border-color: #EE7828;
+    }
+
+    .iconStepActive > i{
+        color:white;
+    }
+
     .line{
         width: 40px;
         height: 5px;
         border-top: 3px solid #DEDEDE;
     }
     /* */
+    
 
 /*FORM RECEITA*/
+.content-minhas-receitas form >div:not(.btn-group){
+    display: block;
+}
+.content-minhas-receitas form>div.active{
+    display: block;
+}
+
 .formReceita{
     border:2px solid blue;
     display:flex;
@@ -838,7 +856,7 @@ img.email{
         justify-content: center;
         gap:10px;
         
-        display: none;
+        /*display: none;*/
     }
     .tituloReceita,.medidaReceita,.glutenReceita,
     .lactoseReceita,.tipoPorcaoReceita,.porcoesEmbaladasReceita,.pesoFinalReceita,.porcaoReceita,.medidaCaseiraReceita
@@ -883,6 +901,9 @@ img.email{
     /**/
 
     /* Form Two */
+
+    .form-two .form-three {display:none;}
+
     .form-two{
         display: none;
     }
@@ -1052,6 +1073,9 @@ img.email{
     /* */
 
     /* FORM THREE */
+    .form-three{
+        display:block;
+    }
     #search-alergenico-input{
         width: 320px;
         height: 35px;
@@ -1061,6 +1085,9 @@ img.email{
         border: 0.5px solid #545454;
         /* background: #F0F0F0; */
         outline: none;
+    }
+    .optionsAlergenicos{
+        padding: 5px;
     }
 /**/
 .container-btn-group{

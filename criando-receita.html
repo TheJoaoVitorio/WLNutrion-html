@@ -71,24 +71,50 @@
                     <div class="content-minhas-receitas">
                         <div class="formReceita">
                             <div class="progress-bar">
-                                <div class="step step1">
+
+                                <ul class="progress-bar ">
+                                    <li class="step step1 iconStepActive ">
+                                        <i class="bx bx-info-circle"></i>
+                                    </li>
+
+                                    <div class="line line1"></div>
+                                    <li class="step step2">
+                                        <i class="bx bx-bowl-rice"></i>
+                                    </li>
+
+                                    <div class="line line2"></div>
+                                    <li class="step step3">
+                                        <i class="bx bx-error"></i>
+                                    </li>
+
+                                    <div class="line line3"></div>
+                                    <li class="step step4">
+                                        <i class="bx bxs-file-pdf"></i>
+                                    </li>
+
+                                </ul>
+                               <!--<div class="step step1 iconStepActive">
                                     <i class="bx bx-info-circle"></i>
                                 </div>
                                 <div class="line line1"></div>
+
                                 <div class="step step2">
                                     <i class="bx bx-bowl-rice"></i>
                                 </div>
                                 <div class="line line2"></div>
+
                                 <div class="step step3">
                                     <i class="bx bx-error"></i>
                                 </div>
                                 <div class="line line3"></div>
+
                                 <div class="step step4">
                                     <i class="bx bxs-file-pdf"></i>
                                 </div>
+                                -->
                             </div>
-                            <form action="">
-                                <div class="form-one form-step">
+                            <form action="" method="" >
+                                <div class="form-one form-step ">
                                     <div class="tituloReceita flex">
                                         <label for="tituloReceita">Título</label>
                                         <input id="tituloReceita" class="inputForm2" type="text" placeholder="Nome da Receita">
@@ -284,8 +310,6 @@
                                         </div>
                                 </div>
 
-
-
                                 <div class="form-four form-step">
 
                                 </div>
@@ -296,7 +320,8 @@
                                             <img src="img/fi-sr-arrow-small-right.png">
                                             Voltar
                                         </button>
-                                        <button type="submit" onclick='' class="btn-verde btnCriandoReceita">Proximo</button>
+                                        <button type="button"  class="btn-proximo btn-verde btnCriandoReceita">Proximo</button>
+                                        <button type="submit" class="btn-verde">Submit</button>
                                     </div>
                                 </div>
                             </form>
@@ -315,6 +340,7 @@
     
 
     <script src="activePage.js"></script>
+    <script src="c_receitaScript.js" ></script>
     <!--<script src="scriptReceita.js"></script> -->
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
