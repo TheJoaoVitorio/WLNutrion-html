@@ -28,11 +28,11 @@ const updateProgress = ()=>{
     steps.forEach((step,i) => {
         if (i == (active-1)){
             step.classList.add('iconStepActive');
-            formSteps[i].classList.add('iconStepActive');
+            formSteps[i].classList.add('ativo');
             console.log('i => '+i);
         }else{
             step.classList.remove('iconStepActive');
-            formSteps[i].classList.remove('iconStepActive');
+            formSteps[i].classList.remove('ativo');
         }
     });
 
@@ -45,3 +45,32 @@ const updateProgress = ()=>{
         nextButton.disabled = false;
     }
 }
+
+
+
+function dropDownReceita(){
+    //form two
+    const dropReceita = document.querySelector('.content-dropReceita');
+    const selectBtn = document.querySelector('.select-btn');
+    const rotationIcon = selectBtn.querySelector('i');
+
+    selectBtn.addEventListener('click', () => {
+        dropReceita.classList.toggle('activeDrop');
+        rotationIcon.classList.toggle('rotation-icon');
+    });
+
+    //form three
+    const dropReceitaAle = document.querySelector('.contentAle');
+    const selectBtn3 = document.querySelector('.select-btn-frm3');
+    const rotationIcon3 = selectBtn3.querySelector('i');
+
+    selectBtn3.addEventListener('click', ()=>{
+        dropReceitaAle.classList.toggle('activeDrop');
+        rotationIcon3.classList.toggle('rotation-icon');
+    });
+
+}
+
+    document.addEventListener('DOMContentLoaded' , () =>{
+        dropDownReceita();
+    });

@@ -114,81 +114,82 @@
                                 -->
                             </div>
                             <form action="" method="" >
-                                <div class="form-one form-step ">
-                                    <div class="tituloReceita flex">
-                                        <label for="tituloReceita">Título</label>
-                                        <input id="tituloReceita" class="inputForm2" type="text" placeholder="Nome da Receita">
+                                <div class="form-one form-step ativo">
+                                    <div class="container-form-one flex">
+                                        <div class="tituloReceita flex">
+                                            <label for="tituloReceita">Título</label>
+                                            <input id="tituloReceita" class="inputForm2" type="text" placeholder="Nome da Receita">
+                                        </div>
+                                        <div class="medidaReceita flex">
+                                            <label for="select">Medida</label>
+                                            <select class="inputForm2" name="medidaReceita" id="selectOption">
+                                                <div class="options">
+                                                    <option class="op" value="" disabled>Selecione</option>
+                                                    <option class="op" value="gramas">Gramas(g)</option>
+                                                    <option value="mililitros">Mililitros(ml)</option>
+                                                </div>
+                                                
+                                            </select>
+                                            <div class="arrow">
+                                                <i class='bx bxs-down-arrow'></i>
+                                            </div>
+                                        </div>
+                                        <div class="glutenReceita flex">
+                                            <label for="">Glúten</label>
+                                            <select class="inputForm2" name="glutenReceita" id="selectOption">
+                                                <option value=''disabled >Selecione</option>
+                                                <option value="naoContemGluten">Não Contém Glúten</option>
+                                                <option value="contemGluten">Contém Glúten</option>
+                                                
+                                            </select>
+                                            <div class="arrow">
+                                                <i class='bx bxs-down-arrow'></i>
+                                            </div>
+                                        </div>
+                                        <div class="lactoseReceita flex">
+                                            <label for="">Lactose</label>
+                                            <select class="inputForm2" name="lactoseReceita" id="selectOption">
+                                                <option value=''disabled >Selecione</option>
+                                                <option value="zeroLactose">Zero Lactose</option>
+                                                <option value="baixoTeorDeLactose">Baixo Teor de Lactose</option>
+                                                <option value="contemLactose">Contém Lactose</option>
+                                               
+                                            </select>
+                                            <div class="arrow">
+                                                <i class='bx bxs-down-arrow'></i>
+                                            </div>
+                                        </div>
+                                        <div class="tipoPorcaoReceita flex">
+                                            <label for="">Tipo de Porção</label>
+                                            <select class="inputForm2" name="lactoseReceita" id="selectOption" required>
+                                                <option  value=''disabled >Selecione</option>
+                                                <option value="porcaoInteira">Porção Inteira</option>
+                                                <option value="porcaoQuebrada">Porção Quebrada</option>
+                                                <option value="semPorcao">Sem Porção</option>
+                                               
+                                            </select>
+                                            <div class="arrow">
+                                                <i class='bx bxs-down-arrow'></i>
+                                            </div>
+                                        </div>
+                                        <div class="porcoesEmbaladasReceita flex">
+                                            <label for="porcoesEmbaladas">Porções Embaladas</label>
+                                            <input id="porcoesEmbaladas" class="inputForm2" type="number" placeholder="00" required>
+                                        </div>
+                                        <div class="pesoFinalReceita flex">
+                                            <label for="pesoFinal">Peso Final(g/ml)</label>
+                                            <input id="pesoFinal" class="inputForm2" type="number" placeholder="0" required>
+                                        </div>
+                                        <div class="porcaoReceita flex">
+                                            <label for="porcao">Porção(g/ml)</label>
+                                            <input id="porcao" class="inputForm2" type="number" placeholder="00" required>
+                                        </div>
+                                        <div class="medidaCaseiraReceita flex">
+                                            <label for="medidaCaseira">Medida Caseira</label>
+                                            <input id="medidaCaseira" class="inputForm2" type="txt" placeholder="Ex: 1 colher de sopa" required>
+                                        </div>
                                     </div>
 
-                                    
-                                    <div class="medidaReceita flex">
-                                        <label for="select">Medida</label>
-                                        <select class="inputForm2" name="medidaReceita" id="selectOption">
-                                            <div class="options">
-                                                <option class="op" value="" disabled>Selecione</option>
-                                                <option class="op" value="gramas">Gramas(g)</option>
-                                                <option value="mililitros">Mililitros(ml)</option>
-                                            </div>
-                                            
-                                        </select>
-                                        <div class="arrow">
-                                            <i class='bx bxs-down-arrow'></i>
-                                        </div>
-                                    </div>
-                                    <div class="glutenReceita flex">
-                                        <label for="">Glúten</label>
-                                        <select class="inputForm2" name="glutenReceita" id="selectOption">
-                                            <option value=''disabled >Selecione</option>
-                                            <option value="naoContemGluten">Não Contém Glúten</option>
-                                            <option value="contemGluten">Contém Glúten</option>
-                                            
-                                        </select>
-                                        <div class="arrow">
-                                            <i class='bx bxs-down-arrow'></i>
-                                        </div>
-                                    </div>
-                                    <div class="lactoseReceita flex">
-                                        <label for="">Lactose</label>
-                                        <select class="inputForm2" name="lactoseReceita" id="selectOption">
-                                            <option value=''disabled >Selecione</option>
-                                            <option value="zeroLactose">Zero Lactose</option>
-                                            <option value="baixoTeorDeLactose">Baixo Teor de Lactose</option>
-                                            <option value="contemLactose">Contém Lactose</option>
-                                           
-                                        </select>
-                                        <div class="arrow">
-                                            <i class='bx bxs-down-arrow'></i>
-                                        </div>
-                                    </div>
-                                    <div class="tipoPorcaoReceita flex">
-                                        <label for="">Tipo de Porção</label>
-                                        <select class="inputForm2" name="lactoseReceita" id="selectOption" required>
-                                            <option  value=''disabled >Selecione</option>
-                                            <option value="porcaoInteira">Porção Inteira</option>
-                                            <option value="porcaoQuebrada">Porção Quebrada</option>
-                                            <option value="semPorcao">Sem Porção</option>
-                                           
-                                        </select>
-                                        <div class="arrow">
-                                            <i class='bx bxs-down-arrow'></i>
-                                        </div>
-                                    </div>
-                                    <div class="porcoesEmbaladasReceita flex">
-                                        <label for="porcoesEmbaladas">Porções Embaladas</label>
-                                        <input id="porcoesEmbaladas" class="inputForm2" type="number" placeholder="00" required>
-                                    </div>
-                                    <div class="pesoFinalReceita flex">
-                                        <label for="pesoFinal">Peso Final(g/ml)</label>
-                                        <input id="pesoFinal" class="inputForm2" type="number" placeholder="0" required>
-                                    </div>
-                                    <div class="porcaoReceita flex">
-                                        <label for="porcao">Porção(g/ml)</label>
-                                        <input id="porcao" class="inputForm2" type="number" placeholder="00" required>
-                                    </div>
-                                    <div class="medidaCaseiraReceita flex">
-                                        <label for="medidaCaseira">Medida Caseira</label>
-                                        <input id="medidaCaseira" class="inputForm2" type="txt" placeholder="Ex: 1 colher de sopa" required>
-                                    </div>
                                 </div>
                                 <div class="form-two form-step">
                                     <div class="wrapper flex">
@@ -199,7 +200,7 @@
 
                                         <div class="content-dropReceita">
                                             <div class="search-ingrediente">
-                                                <input type="text" id="search-ingrediente-input" placeholder="Buscar ingrediente">
+                                                <input type="text" class="search-alergenico-input" placeholder="Buscar ingrediente">
                                                 <div class="contentCheckbox">
                                                     <input type="checkbox" name="" id="MeusIngredientesCheck">
                                                     <label for="MeusIngredientesCheck">Meus ingredientes</label>
@@ -234,71 +235,23 @@
                                                             <button id="btnApagarIng"> <img width="35px" src="img/apagar-receita.png"></button>
                                                         </th>
                                                     </tr>
-                                                    <tr>
-                                                        <th>Abacate</th>
-                                                        <th class="qtdIngredienteInput flex">
-                                                            <label for="qtdDoIngredienteReceita">Qtd(g/ml)</label>
-                                                            <input id="qtdDoIngredienteReceita" type="text" required>
-                                                        </th>
-                                                        <th>
-                                                            <button id="btnApagarIng"> <img width="35px" src="img/apagar-receita.png"></button>
-                                                        </th>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Abacate</th>
-                                                        <th class="qtdIngredienteInput flex">
-                                                            <label for="qtdDoIngredienteReceita">Qtd(g/ml)</label>
-                                                            <input id="qtdDoIngredienteReceita" type="text" required>
-                                                        </th>
-                                                        <th>
-                                                            <button id="btnApagarIng"> <img width="35px" src="img/apagar-receita.png"></button>
-                                                        </th>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Abacate</th>
-                                                        <th class="qtdIngredienteInput flex">
-                                                            <label for="qtdDoIngredienteReceita">Qtd(g/ml)</label>
-                                                            <input id="qtdDoIngredienteReceita" type="text" required>
-                                                        </th>
-                                                        <th>
-                                                            <button id="btnApagarIng"> <img width="35px" src="img/apagar-receita.png"></button>
-                                                        </th>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Abacate</th>
-                                                        <th class="qtdIngredienteInput flex">
-                                                            <label for="qtdDoIngredienteReceita">Qtd(g/ml)</label>
-                                                            <input id="qtdDoIngredienteReceita" type="text" required>
-                                                        </th>
-                                                        <th>
-                                                            <button id="btnApagarIng"><img width="35px" src="img/apagar-receita.png"></button>
-                                                        </th>
-                                                    </tr>
-                                                    <tr>
-                                                        <th id="nomeIngredienteReceita">Frango Frito Quente</th>
-                                                        <th class="qtdIngredienteInput flex">
-                                                            <label for="qtdDoIngredienteReceita">Qtd(g/ml)</label>
-                                                            <input id="qtdDoIngredienteReceita" type="text" required>
-                                                        </th>
-                                                        <th>
-                                                            <button id="btnApagarIng"> <img width="35px" src="img/apagar-receita.png"></button>
-                                                        </th>
-                                                    </tr>
+                                                    
                                                 </tbody>
                                             </table>
                                         </div>
+
                                     </div>
                                 </div>
                                 <div class="form-three form-step">
                                     <div class="wrapper flex">
-                                        <div class="select-btn">
+                                        <div class="select-btn select-btn-frm3" >
                                             <span>Selecione</span>
                                             <i class='bx bxs-down-arrow'></i>
                                         </div>
 
-                                        <div class="content-dropReceita">
+                                        <div class="content-dropReceita contentAle">
                                             <div class="search-alergenico">
-                                                <input type="text" id="search-alergenico-input" placeholder="Buscar Alergenico">
+                                                <input type="text" class="search-alergenico-input" id="search-alergenico-input" placeholder="Buscar Alergenico">
                                             
                                                 <ul class="optionsAlergenicos">
                                                     <li>Contém Amendoá</li>
@@ -308,6 +261,22 @@
                                                 </ul>
                                             </div>
                                         </div>
+
+                                        <div class="table-ingredientes-da-receita">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Contém Amendoim</th>
+                                                
+                                                        <th>
+                                                            <button id="btnApagarIng"> <img width="35px" src="img/apagar-receita.png"></button>
+                                                        </th>
+                                                    </tr>
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div class="form-four form-step">

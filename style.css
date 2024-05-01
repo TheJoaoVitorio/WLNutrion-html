@@ -106,7 +106,7 @@
 /* HEADER */
 .container-navbar{
     width: 100%;
-    height: 16vh;
+    height: 12vh;
     box-shadow: 0px 2px rgb(223, 223, 223);
 
     display: flex;
@@ -544,7 +544,7 @@ img.email{
 }
 .nav-left{
     width: 8rem;
-    height: 84vh;
+    height: 88vh;
 
     box-shadow: 2px 2px rgb(223, 223, 223);
 }
@@ -664,7 +664,7 @@ img.email{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     /* border: 2px solid red; */
 }
 .pesquisar-receitas{
@@ -793,16 +793,24 @@ img.email{
         height: 5px;
         border-top: 3px solid #DEDEDE;
     }
+
+    .ativo{
+        display:block;
+    }
+
     /* */
     
 
 /*FORM RECEITA*/
+
+/*
 .content-minhas-receitas form >div:not(.btn-group){
+    
+}*/
+.content-minhas-receitas form>div.ativo{
     display: block;
 }
-.content-minhas-receitas form>div.active{
-    display: block;
-}
+
 
 .formReceita{
     border:2px solid blue;
@@ -813,7 +821,7 @@ img.email{
 }
     /* Select Options */
     .inputForm2{
-        width: 300px;
+        width: 200px;
         height: 50px;
         background: #DEDEDE;
         border:none;
@@ -847,10 +855,19 @@ img.email{
     font-weight: 500;
 }
     /*Form-ONE*/
+    .container-form-one{
+        width: 800px;
+        flex-direction:row;
+        flex-wrap: wrap;
+        gap:10px;
+        justify-content: center;
+        align-items: center;
+    }
+
     .form-one{
         border:2px solid rgb(255, 81, 0);
         width:800px;
-        display:flex;
+        display:none;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -902,8 +919,6 @@ img.email{
 
     /* Form Two */
 
-    .form-two .form-three {display:none;}
-
     .form-two{
         display: none;
     }
@@ -937,10 +952,20 @@ img.email{
         transition: transform 0.3s linear;
     }
     .content-dropReceita{
-        display:block;
+        display:none;
         background: #F0F0F0;
         margin-top: 10px;
     }
+
+    .activeDrop{
+        display:block;
+    }
+
+    .rotation-icon{
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+    }
+
     .search-ingrediente .search-alergenico{
         width: 320px;
         display: flex;
@@ -957,11 +982,12 @@ img.email{
         outline: none;
 
     }
-    #MeusIngredientesCheck input { 
+    #MeusIngredientesCheck input {
+        
         accent-color: var(--cor-laranja);
     }
 
-    #search-ingrediente-input input[type="checkbox"]:checked + label:before{
+    #search-ingrediente-input {
         background-color: #EE7828;
     }
     .contentCheckbox{
@@ -977,14 +1003,26 @@ img.email{
         padding:5px;
     }
     .content-dropReceita .optionsIngredientes ,.optionsAlergenicos{
-        max-height:170px;
+        max-height:70px;
         overflow-y: auto;
-    }
-    .optionsIngredientes , .optionsAlergenicos li{
+        gap: 8px;
+        display:flex;
+        flex-direction: column;
         padding: 5px;
     }
+    .content-dropReceita .optionsIngredientes li:hover{
+        background: #d4d4d4;
+    }
+    
+    .content-dropReceita .optionsAlergenicos li:hover{
+        background: #d4d4d4;
+    }
+
     .optionsIngredientes ,.optionsAlergenicos li:hover{
-        background:#DEDEDE;
+        cursor:pointer;
+    }
+    .search-ingrediente .optionsIngredientes ul li:hover{
+        background-color: #000000;
     }
     .itemsReceita{
         background: var(--cor-cinza3);
@@ -1053,6 +1091,8 @@ img.email{
         padding:4px;
 
         font-size:14px;
+        width: 300px;
+        justify-content: space-between;
     }
     .table-ingredientes-da-receita tbody label{
         font-size: 12px;
@@ -1074,9 +1114,9 @@ img.email{
 
     /* FORM THREE */
     .form-three{
-        display:block;
+        display:none;
     }
-    #search-alergenico-input{
+    .search-alergenico-input{
         width: 320px;
         height: 35px;
         /* border: none; */
@@ -1086,9 +1126,20 @@ img.email{
         /* background: #F0F0F0; */
         outline: none;
     }
+    /*#search-alergenico-input{
+        width: 320px;
+        height: 35px;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        border: 0.5px solid #545454;
+        background: #F0F0F0;
+        outline: none;
+    }*/
     .optionsAlergenicos{
-        padding: 5px;
+        padding: 8px;
     }
+
 /**/
 .container-btn-group{
     border:2px solid cyan;
@@ -1450,6 +1501,7 @@ textarea:focus{
 @media (max-width:867px){
     .content{
         height: auto;
+        margin-bottom: 5rem;
     }
     .dashboard{
         /* flex-direction: column; */
@@ -1459,7 +1511,7 @@ textarea:focus{
     }
     .dashboard-menu-table{
         width: 300px;
-        height: 250px   ;
+        height: 250px;
     }
 
     .-container-telaUser{
@@ -1469,6 +1521,21 @@ textarea:focus{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .nav-left{
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 4rem;
+        padding:6px;
+        box-shadow: 0px 0px 0px 2px rgb(223, 223, 223);
+    }
+    .nav-items-lateral{
+        flex-direction: row;
     }
 }
 
@@ -1502,6 +1569,7 @@ textarea:focus{
     .container-principal{
         flex-direction: column-reverse;
     }
+    /*
     .nav-left{
         position: fixed;
         bottom: 0;
@@ -1516,7 +1584,7 @@ textarea:focus{
     .nav-items-lateral{
         flex-direction: row;
     }
-    /**/
+    */
 }
 
 @media (max-width:761px){
@@ -1534,6 +1602,15 @@ textarea:focus{
 @media (max-width:690px){
     .dashboard{
         flex-direction: column;
+    }
+}
+
+@media (max-width:645px){
+    .container-form-one{
+        flex-direction:column;
+    }
+    .inputForm2{
+        width: 300px;
     }
 }
 
