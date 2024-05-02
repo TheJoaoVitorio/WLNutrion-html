@@ -86,12 +86,12 @@
                             </div>
 
                             <div class="formContateNos formButton">
-                                <button type="submit" class="btn-quadrado" onclick="validarFormContatenos()">Enviar</button>
+                                <button type="submit" class="btn-quadrado" onclick="mostrarPopup()" >Enviar</button>
                                 
                                 <div class="popup" id="popup">
                                     <img src="img/fi-bs-check.png" alt="">
                                     <h2> Feedback Enviado!!!</h2>
-                                    <button type="button" onclick="closePopup()">Ok</button>
+                                    <button type="button" onclick="fecharPopup()">Ok</button>
                                 </div>
                             </div>
                         </form>
@@ -104,40 +104,11 @@
     
     </div>
     
-
-    <script>
-        
-    </script>
-
-    <script>
-        function lerPopup(){
-            let popup = document.getElementById("popup");
-            function openPopup(){
-                popup.classList.add("open-popup");
-            }
-            function closePopup(){
-                popup.classList.remove("open-popup");
-            }
-
-        }
-
-        function validarFormContatenos(){
-            var assunto = document.getElementById('assunto-contate-nos').value;
-            var mensagem = document.getElementById('mensagemContate-nos').value;
-
-        
-            if (assunto === "" || mensagem === ""){
-                alert("Por Favor, preencha os campos");
-            }else{
-                lerPopup()
-            }
-            
-        }
-    </script>
+    <script src="popUP.js"></script>
 
     
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/5.5.1/jquery.min.js"></script>
-    <script src="activePage.js"></script>
+    
 </body>
 </html>

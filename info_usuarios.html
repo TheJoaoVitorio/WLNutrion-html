@@ -67,6 +67,7 @@
                     </div>
 
                     <div class="containerFormUser flex">
+
                         <form id="form-info-user" action="">
                             <div class="divInputUser">
                                 <label for="input-info-nome">Nome</label>
@@ -78,18 +79,24 @@
                             </div>
                             <div class="divInputUser" >
                                 <label for="">Senha Atual</label>
-                                <input class="inputForm" type="password" required>
+                                <input class="inputForm" id="input-senha-atual" type="password" required>
                             </div>
                             <div class="divInputUser" >
                                 <label for="">Nova Senha</label>
-                                <input class="inputForm" type="password" required>
+                                <input class="inputForm" id="input-nova-senha" type="password" required>
                             </div>
     
                             <div class="buttons-info-user">
                                 <a class="" href="user.html">
                                     <button id="btnVoltaInfoUser" type="reset" ><img src="img/fi-sr-arrow-small-right.png"> <h1>Voltar</h1> </button>
                                 </a>
-                                <button class="btn-quadrado btnAtualizar" type="submit">Atualizar</button>
+                                <button class="btn-quadrado btnAtualizar" onclick="mostrarPopup2()" type="submit">Atualizar</button>
+                            </div>
+
+                            <div class="popup" id="popup">
+                                <img src="img/fi-bs-check.png" alt="">
+                                <h2> Dados atualizados<br>com sucesso!!!</h2>
+                                <button type="button" onclick="fecharPopUp()">Ok</button>
                             </div>
                         </form>
 
@@ -98,6 +105,6 @@
             </div>  
             
 
-    <script src="activePage.js"></script>
+    <script src="popUP.js"></script>
 </body>
 </html>

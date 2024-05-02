@@ -22,35 +22,28 @@
 
 /* POPUP*/
 .popup {
-    width: 400px;
+    display: none;
+    width: 320px;
     height: 250px;
     background-color: #fff;
     border-radius: 15px;
     position: fixed;
-    top: 50%;
-    left: 56%;
-    transform: translate(-50%, 50%) scale(0.8);
+    top: 20%;
+    left:50%;
+    transform: translate(-50%, 50%);
     text-align: center;
     padding: 0 30px 30px;
-    border: none;
     background-color: #d4d4d4;
-    visibility: hidden;
-    transition: transform 0.1s, visibility 0.1s;
-}
-
-.open-popup {
-    visibility: visible;
-    transform: translate(-50%, -50%) scale(1);
 }
 .popup img {
-    width: 90px;
+    width: 60px;
     margin: 15px 0 10px;
     align-items: center;
 }
 .popup h2 {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 400;
-    margin: 10px 0 35px;
+    padding:5px;
 }
 .popup button {
     border: none;
