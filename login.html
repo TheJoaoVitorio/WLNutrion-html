@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/short-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>WLNutrion</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container-login">
+        <div>
+            <a href="pagina-inicial.html">
+                <img class="logoLogo" src="img/logo.png" alt="logo">
+            </a>
+                <button type="button" class="setavolta">
+                     <img class="seta" src="img/buttom - voltar.png" alt="seta">
+                </button>
+        </div> <!-- imagem da logo logo-->
+        <div class="content-branco">
+
+            <h1 class="ola"> 
+                Olá
+            </h1> 
+            <p id="entrar">
+                Vamos entrar na sua conta !
+            </p>
+            
+            <form class ="campo" > 
+              
+                <div class="conteudoInputs">
+                    <input class="inputsBranco" type="email" placeholder="Email" required >
+                    <img class="email" src="img/fi-rr-envelope.png" alt="email">
+                </div>
+                <div class="conteudoInputs">
+                    <input class="inputsBranco" type="password" placeholder="Senha" required >
+                    <img class="cadeado" src="img/fi-rr-lock.png" alt="cadeado">
+                </div>
+                <div class="d1vbotao">
+                    <input id="botao" type="submit" value="Entrar"></input>
+                </div>  <!--div do botao entrar  -->        
+            </form>
+            
+        </div>
+
+        <!-- Parte laranja  -->
+        <div class="content-laranja">
+        
+            <!-- carrossel -->
+            <main id="carrosselM">
+                <input type="radio" name="position" checked />
+                <input type="radio" name="position" />
+                <input type="radio" name="position" />
+                <!-- <input type="radio" name="position" /> -->
+                <!-- <input type="radio" name="position" /> -->
+                <main id="carousel">
+                  <div class="item">
+                        <h2 id="txtlaranja"> Acesse a sua conta e comece a gerar a tabela nutricional do seu produto.</h2>
+                  </div>
+                  <div class="item">
+                        <h2 id="txtlaranja">A tabela nutricional é uma ferramenta importante para a educação alimentar, e para a promoção de uma alimentação saudavel.</h2>
+                  </div>
+                  <div class="item">
+                    <h2 id="txtlaranja">A tabela nutricional é uma ferramenta importante para a educação alimentar, e para a promoção de uma alimentação saudavel2.</h2>
+                  </div>
+                  <!-- <div class="item"></div> -->
+                  <!-- <div class="item"></div> -->
+                </main>
+            </main>   
+        </div>
+    
+    </div>
+    
+    <script src="scriptSlideLogin.js"></script>
+</body>
+
+   
+
+
+</html>

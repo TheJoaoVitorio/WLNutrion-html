@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/short-icon.png">
-    <title>WLNutrion - Meus ingredientes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>WLNutrion - Home</title>
 </head>
 <body>
     <nav class="container-navbar">
@@ -63,25 +63,79 @@
     
             <div class="content">
                 <div class="container-content">
-                    <div class="content-title">
+                    <div class="content-title titleMeusIngredientes">
                         <h1>Meus ingredientes</h1>
                     </div>
-                   
-                    <div class="content-ingredientes">
-                        <div class="pesquisar-receitas">
-                            <input type="text" placeholder="Buscar">
-                            <img id="search-icon" src="img/pesquisar.png">
-                        </div>
-                        
-                    </div>
                 </div>
-            </div>
+                <div class="container-ingredientes">
+
+                    <div class="pesquisar-receitas">
+                        <input type="text" placeholder="Buscar">
+                        <img id="search-icon" src="img/pesquisar.png">
+                    </div>
     
+                    <div class="box-2">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>INGREDIENTE</th>
+                                    <th>ENERGIA</th>
+                                    <th>CARBOIDRATOS</th>
+                                    <th>AÇÚCARES TOTAIS</th>
+                                    <th>AÇÚCARES ADICIONAIS</th>
+                                    <th>PROTEÍNAS</th>
+                                    <th>GORDURAS TOTAIS</th>
+                                    <th>GORDURAS SATURADAS</th>
+                                    <th>GORDURAS TRANS</th>
+                                    <th>FIBRA</th>
+                                    <th>SÓDIO</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>NomeIngrediente</th>
+                                    <th>00kcal</th>
+                                    <th>0,00g</th>
+                                    <th>0g</th>
+                                    <th>0g</th>
+                                    <th>0,00g</th>
+                                    <th>0,00g</th>
+                                    <th>0g</th>
+                                    <th>0g</th>
+                                    <th>0,00g</th>
+                                    <th>0,00mg</th>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+
+
+                    <div class="box-3">
+                        <button id="anteriorIngredientes">
+                            <img src="img/fi-bs-angle-left.png" alt="esquerda">
+                        </button>
+                        <div>
+                            <input type="text" placeholder="1">
+                        </div>
+                        <button id="ProximoIngredientes">
+                            <img src="img/fi-bs-angle-right.png " alt="direita">
+                        </button>
+                    </div>
+                    <div class="box-4">
+                        <a href="criando-ingredientes.html">
+                            <button class="btn-verde btnCriarIngrediente">Criar Ingrediente</button>
+                        </a>
+                    </div>
+                
+
+                </div>
+
         </div>
 
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/5.5.1/jquery.min.js"></script>
     <script src="activePage.js"></script>
 </body>
 </html>
